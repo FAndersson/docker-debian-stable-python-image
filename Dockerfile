@@ -9,3 +9,4 @@ RUN pip3 install pycodestyle
 RUN pip3 install pydocstyle
 RUN pip3 install pylint
 RUN pip3 install pytest
+RUN pip3 install ruff
