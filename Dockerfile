@@ -16,3 +16,8 @@ RUN apt-get update --quiet --yes && apt-get install --quiet --yes \
     texlive-latex-recommended
 # Install uv for Python dependency management.
 RUN curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="/usr/bin" sh
+
+# Create default user.
+RUN useradd --create-home --shell /bin/bash fredrik
+USER fredrik
+WORKDIR /home/fredrik
