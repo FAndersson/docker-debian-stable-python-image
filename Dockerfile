@@ -1,7 +1,7 @@
 # Docker image containing Python stuff based on base development image for
 # Debian stable.
 
-FROM fredrikandersson/debian-stable-dev-image-base:2024-07-01
+FROM fredrikandersson/debian-stable-dev-image-base:2025-02-03
 
 # Install useful packages for Python development from apt.
 RUN apt-get update --quiet --yes && apt-get install --quiet --yes \
